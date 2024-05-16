@@ -1,6 +1,7 @@
 # SNDetector
 ### Scientific Number Detector Website
 ![Generic badge](https://img.shields.io/badge/build-done-<COLOR>.svg)
+
 A simple responsive website to identify whether an input is a scientific number or not. The development is done using HTML, CSS, and JavaScript.
 
 ## Features Websites
