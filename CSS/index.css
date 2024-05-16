@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+	background-color: #FFF7F1;
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+
+.containe{
+    font-size: 1.2em;
+    width: 100%;
+    height: 140vh;
+    display: grid;
+    grid-template-areas: 'navbar' 'content' 'footer';
+    grid-template-columns: 1fr;
+    grid-template-rows: auto fit-content auto;
+}
+
+nav{
+    grid-area: navbar;
+}
+
+.nav-item{
+    margin-right: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #124076;
+}
+
+.nav-item :hover{
+    background-color: #00000044;
+    color: rgb(211, 211, 211);
+}
+
+.content{
+    grid-area: content;
+    height: auto;
+}
+
+.detect{
+    padding-top: 5em;
+    padding-bottom: 1em;
+    text-align: center;
+    align-content: center;
+    font-weight: bold;
+    font-size: 24px;
+    background-image: url("../Assets/bg1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #464646;
+    
+}
+.pengertian{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-left: 5em;
+    padding-right: 5em;
+    padding-top: 5em;
+}
+
+.pengertian p{
+    padding-left: 20px;
+    text-align: justify;
+}
+.about{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-left: 5em;
+    padding-right: 5em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.about p{
+    padding-left: 20px;
+    text-align: justify;
+}
+
+.about .row{
+    text-align: center;
+}
+
+.about .row .col{
+    margin-bottom: 10px;
+}
+
+.about .card{
+    background-color: rgb(103, 150, 134);
+    min-width: 250px;
+}
+
+.about .card :hover{
+    background-color: #D37676;
+    padding-bottom: 10px;
+}
+
+.creator{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 5em;
+    padding-right: 5em;
+    padding-top: 5em;
+    background-image: url("../Assets/bg2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: inherit;
+    background-size: cover;
+}
+
+.creator p{
+    padding-left: 20px;
+    text-align: justify;
+}
+
+#numberInput {
+	padding: 10px;
+	font-size: 20px;
+    width: 20vw;
+    min-width: 140px;
+}
+
+#detectButton {
+	padding: 10px 20px;
+    width: 7vw;
+    min-width: 90px;
+	font-size: 18px;
+	color: white;
+	border: none;
+	border-radius: 5px;
+}
+
+.detectButton{
+    background-color: #bb5353;
+}
+
+#result {
+	margin-top: 20px;
+	font-size: 20px;
+}
+
+
+footer .footer {
+    padding-top: 100px;
+    width: auto;
+    background-color: #badfd3fa;
+    padding-bottom: 0.3px;
+    border-top: 2.3px solid #D37676;
+}
+
+.footer .row {
+    color: rgb(33, 52, 45);
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: -40px;
+}
+
+.footer #f-hr {
+    background-color: rgb(33, 52, 45);
+    height: 0.5px;
+    width: 87%;
+}
+
+@media (min-width: 992px) {
+    .detect{
+        padding-top: 5em;
+        
+    }
+}

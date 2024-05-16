@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0"/>">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="jquery-3.7.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="CSS/index.css">
+	<title>Scientific Number Detector</title>
+</head>
+<body>
+    <div class="containe">
+        <header>
+            <nav class="navbar navbar-expand-lg px-5 fixed-top" style="background-color: #76ABAE;">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="Assets/logo-removebg.png" style="width: 50px; height : auto">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav ">
+                            <li class="nav-item">
+                                <a class="nav-link scrollLink" href="#detect">Number Detector</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link scrollLink" href="#pengertian">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link scrollLink" href="#creator">Creator</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    
+        <main class="content">
+            <div class="detect my-auto mx-auto align-self-center text-center" id="detect">
+                <p style="font-size: 5.5vw; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-weight:bold; ">SCIENTIFIC NUMBER</p>
+                <p style="font-size: 5.5vw; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-weight:bold; margin-top:-30px">DETECTOR</p>
+                <input type="text" id="numberInput" style="font-size: 16px;" placeholder="Enter a number">
+                <button type="button" class="btn btn-danger detectButton" id="detectButton" style="font-size: 16px;">Detect</button>
+                <center>
+                    <p id="result" style="background-color: #124076; width: fit-content; padding:3px; border-radius:10px; color:azure; font-size: 16px"></p>
+                </center>
+            </div>
+            <div class="pengertian" id="pengertian">
+                <h1>What is Scientific Number ?</h1>
+                <p>Scientific notation is a numerical expression method designed to simplify the representation and handling of extremely large or small numbers. It is particularly advantageous when dealing with quantities that would otherwise require a cumbersome amount of digits in standard decimal form. This notation is characterized by its efficiency and the ease with which it allows for the performance of mathematical operations, such as multiplication and division, on numbers of vastly different magnitudes.</p>
+                <p>The structure of scientific notation is both elegant and practical. A number is expressed as a product of two parts: a coefficient that is a single non-zero digit followed by any number of decimal places, and a power of ten, which indicates how many places the decimal point has been moved from the number’s original position. This power is positive for numbers greater than one and negative for numbers less than one.</p>
+                <p>The widespread use of scientific notation in the scientific community is a testament to its utility. Scientists, mathematicians, doctors, and engineers frequently employ this system in their calculators and computational tools to facilitate the precise and efficient manipulation of numerical data. Whether measuring the vast distances between celestial bodies or the minute forces at the subatomic level, scientific notation provides a consistent and reliable means of quantification that is universally recognized across various scientific disciplines. It is an indispensable tool in the arsenal of professionals who regularly work with quantitative data that spans the scale from the infinitesimal to the astronomical.</p>
+                <!-- <math xmlns="http://www.w3.org/1998/Math/MathML" display"block"">
+                    <semantics>
+                        <mrow>
+                            <mi>a</mi>
+                            <mo>x</mo>
+                            <mn>1</mn>
+                            <msup>
+                                <mn>0</mn>
+                                <mi>b</mi>
+                            </msup>
+                        </mrow>
+                    </semantics>
+                </math> -->
+            </div>
+            <div class="about">
+                <h1>About Scientific Number Detector</h1>
+                <p>The Scientific Number Detector is an innovative tool specifically designed to detect whether a number falls under the category of scientific notation. This tool is incredibly useful for researchers, academics, and anyone who frequently interacts with large or very small numbers typically presented in scientific notation.</p>
+                <div class="row">
+                    <div class="col">
+                        <div class="card" style="width: 100%;">
+                            <div class="card-body">
+                                <i class="fa fa-search" style="font-size: 60px; margin-bottom:10px;"></i>
+                                <h5 class="card-title">Automatic Detection</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Simply input any number, and our system will instantly inform you if it is in scientific notation.</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 100%;">
+                            <div class="card-body">
+                                <i class="fa fa-gear" style="font-size: 60px; margin-bottom:10px;"></i>
+                                <h5 class="card-title">Precision and Efficiency</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">With advanced algorithms, the Scientific Number Detector offers quick and accurate detection.</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 100%;">
+                            <div class="card-body">
+                                <i class="fa fa-child" style="font-size: 60px; margin-bottom:10px;"></i>
+                                <h5 class="card-title">User-Friendly Interface</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">The user-friendly interface ensures that anyone can use this tool with ease</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="creator" id="creator">
+                <div class="row">
+                    <div class="col-sm-5 text-center">
+                        <img src="Assets/mylogo.png" class="card-img mb-3 ;" style="border-radius: 10px;"> #my photo
+                    </div>
+                    <div class="col my-auto">
+                        <a style="font-weight: bolder; font-size: 25px;color: #D37676;">Creator By</a>
+                        <hr style="color: #054530;">
+                        <h1 style=" font-weight: bolder;color: rgb(59, 59, 59);margin-top: -10px;">M . M . M . H</h1>
+                        <h6 style="margin-top: 20px; font-weight: 400; color: rgb(112, 112, 112); " class="d-block">"A Bachelor of Information Systems student at Sam Ratulangi University who is highly interested in Technology and Information Systems. She has effective time management skills, allowing her to organize her class schedule, projects, and extracurricular activities well. She is always eager to learn new things and take responsibility for completing tasks given to her as best as possible."</h6>
+                    </div>
+                </div>
+            </div>
+        </main>
+    
+        <footer>
+            <div class="footer">
+                <div class="row d-flex justify-content-center">
+                    <div class=" mb-3" style="width: 17rem;">
+                        <div class="card-body">
+                            <img src="Assets/logo-removebg.png" style="width: auto; height:290px; margin-top: -30px;margin-bottom: -50px; margin-left:-10px">
+                            <h2 class="mt-5" style="font-size: 32px;">Scientific Number</h2>
+                        </div>
+                    </div>
+                    <div class=" mr-4 mb-3" style="width: 16rem;">
+                        <div class="card-body">
+                            <h5 class="card-title" style="font-weight: 600;color: rgb(33, 52, 45);">Useful Links</h5>
+                            <hr style="background-color: #D37676;height: 1px;"><br>
+                            <p class="card-text">Number Detector</p>
+                            <p class="card-text">About</p>
+                            <p class="card-text">Creator</p>
+                        </div>
+                    </div>
+                    <div class=" mr-4 mb-3 " style="width: 16rem;">
+                        <div class="card-body">
+                            <h5 class="card-title" style="font-weight: 600;color: rgb(33, 52, 45);">Social Media Creator</h5>
+                            <hr style="background-color: #D37676; height: 1px;"><br>
+                            <a href="https://www.instagram.com/ranmassie_/"><p class="card-text">Instagram</p></a>
+                            <a href="https://www.linkedin.com/in/maharanimmh/"><p class="card-text">LinkedIn</p></a>
+                        </div>
+                    </div>
+                </div>
+                <center>
+                    <hr id="f-hr">
+                </center>
+                <p id="f-rani" class="text-center pb-2" style="color: #D37676; font-weight:bold">Created by Maharani_</p>
+            </div>
+        </footer>
+    </div>
+    
+
+    <script>
+        $(document).ready(function() {
+            $("a.scrollLink").click(function(event) {
+                event.preventDefault();
+                $("html, body").animate({
+                    scrollTop: $($(this).attr("href")).offset().top
+                }, 500);
+            });
+        });
+    </script>
+    
+	<script src="JS/detect.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</body>
+</html>
